@@ -1,0 +1,128 @@
+.nav-icons{
+    path{
+        fill-opacity: .25;
+        transition: all 500ms ease;
+    }
+    &:hover{
+        path{
+            fill: #FACD66;
+            fill-opacity: 1;
+        }
+    }  
+    &.active{
+        path{
+            fill-opacity: 1;
+        }
+    }
+}
+
+
+.player{
+    backdrop-filter: blur(8px);
+    background: rgba(51, 55, 59, 0.7);
+}
+
+.song{
+    background: url("./src//assets/images/img2.svg") no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.collection{
+    &>div{
+        background: url("./src/assets/images/img1.svg") no-repeat;
+        background-size: cover;
+        transition: 400ms linear;
+        background-position-x: -20px;
+        background-size: 260px;
+        position: relative;
+        & .collection-text{
+            transition: 500ms linear;
+        }
+        &:hover{
+            background-size: 300px;
+            & .play{
+                visibility: visible;
+                
+            }
+            & .collection-text{
+                bottom: 0
+            }
+        }
+    }
+    & .play{
+        background: #FACD66;
+        border-radius: 50%;
+        height: 38px;
+        width: 38px;
+        display: grid;
+        place-items: center;
+        opacity: .7;
+        visibility: hidden;
+        transition: 500ms linear;
+    }
+}
+
+
+input[type ="range"].volume::-webkit-slider-thumb {
+    opacity: 0;
+}
+input[type ="range"].volume::-ms-thumb{
+    opacity: 0;
+}
+input[type ="range"].volume::-moz-range-thumb{
+    opacity: 0;
+}
+// input[type ="range"]::-webkit-slider-runnable-track{
+//     background: #FACD66;
+//     height: 0.25rem;
+// }
+
+.playPause{
+    transform: translate(-50%, -50%);
+    height: 40px;
+    width: 40px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: rgba($color: rgb(0, 0, 0), $alpha: 0.7);
+    backdrop-filter: blur(1px);
+    opacity: 0;
+    transition: 700ms;
+    cursor: pointer;
+}
+
+
+.hover-playPause:hover .playPause{
+    opacity: 1;
+}
+.show{
+    opacity: 1;
+}
+
+.body{
+    background-size: cover;
+    // height: 100vh;
+    position: relative;
+    & .overlay{
+        position: absolute;
+        inset: 0; 
+        background: linear-gradient(354deg, rgba(20, 20, 19, 0.8) 50%, rgba(65, 71, 71, 0.7) 64%);
+    }
+}
+
+// .head{
+//     background-color: #1D2123;
+// }
+
+.hide-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.hide-scroll {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+.mobile_nav{
+    transition: transform 500ms ease;
+}
