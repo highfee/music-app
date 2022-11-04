@@ -33,7 +33,7 @@ const Search = () => {
           <input
             type="text"
             className="w-[300px] md:w-[400px] bg-transparent outline-none text-gray-200 text-base py-1 px-1 focus:border-[#9b8181]"
-            placeholder="Search artists"
+            placeholder="Search artists/songs"
             onChange={(e) => setSearch(e.target.value)}
           />
         </div>

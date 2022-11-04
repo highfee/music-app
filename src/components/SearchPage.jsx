@@ -21,7 +21,7 @@ const SearchPage = () => {
     dispatch(playPause(false));
   };
   return (
-    <div className="flex justify-center w-[350px] md:min-w-[900px] mb-32 mx-auto">
+    <div className="flex justify-center w-[350px] md:min-w-[900px]  mx-auto max-h-[80vh] h-[80vh] z-50 overflow-hidden hover:overflow-auto hide-scroll">
       {isFetching ? (
         <Loading />
       ) : (
