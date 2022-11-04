@@ -21,11 +21,11 @@ const SearchPage = () => {
     dispatch(playPause(false));
   };
   return (
-    <div className="flex justify-center w-[350px] md:min-w-[900px]  mx-auto max-h-[80vh] h-[80vh] z-50 overflow-hidden hover:overflow-auto hide-scroll">
+    <div className="flex justify-center w-[350px] md:min-w-[900px]  mx-auto maxh-[80vh] h-[80vh] z-50 overflow-hidden hover:overflow-auto hide-scroll hover:h-[120vh">
       {isFetching ? (
         <Loading />
       ) : (
-        <div className="flex flex-wrap gap-5 justify-center">
+        <div className="flex flex-wrap gap-5 justify-center items-start">
           {songs?.map((song, i) => {
             return (
               <div className="hover-playPause">

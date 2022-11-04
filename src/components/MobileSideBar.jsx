@@ -17,7 +17,7 @@ const MobileSideBar = () => {
           onClick={() => dispatch(mobileView(false))}
           size={22}
           fill="white"
-          className="absolute right-5 top-5"
+          className="absolute right-5 top-16"
         />
         <div className="mt-24 pl-10 flex flex-col gap-[27px] ">
           <Link to="/">

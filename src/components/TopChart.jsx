@@ -11,7 +11,7 @@ const TopChart = () => {
   const topThree = data?.slice(0, 3);
 
   return (
-    <div className="mx-auto w-[350px] md:w-[420px] overflow-hidden text-ellipsis whitespace-nowrap">
+    <div className="mx-auto w-[350px] md:w-[420px] text-ellipsis whitespace-nowrap">
       <h2 className="text-white text-[24px] font-[700]">Top charts</h2>
       {isFetching && <Loading />}
       <div className="w-full flex flex-col gap-4 mt-4">
@@ -26,7 +26,7 @@ const TopChart = () => {
                 />
                 <div className="text-white">
                   <Link to={`/song/${song.key}`}>
-                    <p className="text-[17px]  w-max font-thin">
+                    <p className="text-[17px] max-w-[140px] font-thin overflow-hidden text-ellipsis whitespace-nowrap">
                       {song?.title}
                     </p>
                   </Link>
