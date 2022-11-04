@@ -11,7 +11,7 @@ const TopChart = () => {
   const topThree = data?.slice(0, 3);
 
   return (
-    <div className="w-full md:w-[420px]">
+    <div className="mx-auto w-[350px] md:w-[420px] overflow-hidden text-ellipsis whitespace-nowrap">
       <h2 className="text-white text-[24px] font-[700]">Top charts</h2>
       {isFetching && <Loading />}
       <div className="w-full flex flex-col gap-4 mt-4">
