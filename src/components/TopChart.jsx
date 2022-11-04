@@ -9,7 +9,6 @@ const TopChart = () => {
   const { data, isFetching } = useGetTopChartsQuery();
 
   const topThree = data?.slice(0, 3);
-  console.log(topThree);
 
   return (
     <div className="w-full md:w-[420px]">

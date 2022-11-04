@@ -6,6 +6,7 @@ import Collection from "./components/Collection";
 import { useSelector } from "react-redux";
 import ArtistDetails from "./components/ArtistDetails";
 import MobileSideBar from "./components/MobileSideBar";
+import SearchPage from "./components/SearchPage";
 
 function App() {
   const { active, uri } = useSelector((state) => state.background);
@@ -36,6 +37,7 @@ function App() {
             <Route path="/song/:songid" element={<SongDetails />} />
             <Route path="/artist/:artistId" element={<ArtistDetails />} />
             <Route path="/collection" element={<Collection />} />
+            <Route path="/search/:searchQuery" element={<SearchPage />} />
           </Routes>
         </div>
       </div>

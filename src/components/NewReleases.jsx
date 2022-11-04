@@ -29,45 +29,6 @@ const NewReleases = () => {
         <h2 className="text-[24px] text-white font-[700]">New releases</h2>
       </div>
       {isFetching && <Loading />}
-
-      {/* <Swiper
-        slidesPerView="auto"
-        spaceBetween={15}
-        freeMode
-        centeredSlides
-        centeredSlidesBounds
-        modules={[FreeMode]}
-        className="w-[full]"
-      >
-        {popular?.map((item, i) => {
-          return (
-            <div>
-              <SwiperSlide className="w-fit hover-playPause" key={i}>
-                <div className="relative">
-                  <img
-                    src={item?.images.coverart}
-                    alt=""
-                    className="mb-2 w-[153px] rounded-3xl"
-                  />
-                  <PlayPause
-                    handlePlay={handlePlay}
-                    handlePause={handlePause}
-                    song={item}
-                    activeSong={activeSong}
-                    i={i}
-                  />
-                </div>
-                <p className="text-white text-[12px] font-[400] mb-1 max-w-[150px]">
-                  {item?.title}
-                </p>
-                <p className="text-gray-300 text-[10px] font-[400]">
-                  {item?.subtitle}
-                </p>
-              </SwiperSlide>
-            </div>
-          );
-        })}
-      </Swiper> */}
       <Swiper
         slidesPerView="auto"
         spaceBetween={15}

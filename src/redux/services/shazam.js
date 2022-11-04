@@ -1,7 +1,8 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 // const key = "7ec7ee7e1amshfd29ba66b6293b3p14cd85jsn7d1371371416";
-const key = "623b6424eamsh5f9f1ef1aa694a4p15f6a7jsnce902414db28";
+// const key = "623b6424eamsh5f9f1ef1aa694a4p15f6a7jsnce902414db28";
+const key = "5f9fcfdd04msh3fd228cd32cc3cdp1d7d12jsn398f0523e6ae";
 
 export const shazamCoreApi = createApi({
   reducerPath: "shazamCoreApi",

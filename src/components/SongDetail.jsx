@@ -122,7 +122,7 @@ const SongDetail = () => {
           })}
         </div>
         <div className="md:w-2/3 mb-20">
-          <h1 className="text-white mx-6 text-3xl font-[600] mb-8">
+          <h1 className="text-white mx-6 text-3xl font-[600] my-8">
             Related Songs
           </h1>
           {related?.map((item) => {
