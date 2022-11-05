@@ -12,8 +12,8 @@ const Controls = ({
   setRepeat,
 }) => {
   return (
-    <div className="flex flex-grow-[1] items-center gap-1 md:gap-9">
-      <div className="hidden md:block">
+    <div className="hidden md:flex flex-grow-[1] items-center gap-1 md:gap-9">
+      <div className="">
         <div
           className={`cursor-pointer ${
             shuffle &&

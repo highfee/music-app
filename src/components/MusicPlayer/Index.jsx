@@ -58,8 +58,8 @@ const Index = () => {
   return (
     <>
       {isActive && (
-        <div className="h-[80px] md:h-[120px] px-5 md:px-0 w-full fixed z-50 bottom-0 player flex justify-center items-center">
-          <div className="max-w-[1130px] w-full mx-auto flex items-center justify-evenly md:justify-between ">
+        <div className="h-[80px] md:h-[120px] px-5 md:px-0 w-full fixed z-50 bottom-0 player flex justify-center items-center ">
+          <div className="max-w-[1130px] w-ful mx-auto flex items-center justify-evenly md:justify-between ">
             <Track activeSong={activeSong} isPlaying={isPlaying} />
 
             <Player
@@ -75,7 +75,7 @@ const Index = () => {
               loop={repeat}
             />
 
-            <div className="flex flex-col items-center gap-2">
+            <div className="flex flex-col items-center gap-2 w-full ">
               <Controls
                 isPlaying={isPlaying}
                 handlePlayPause={handlePlayPause}

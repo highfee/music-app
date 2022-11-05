@@ -4,7 +4,7 @@ const Volume = ({ min, max, onChange, value, volume, setVolume }) => {
   const muted = false;
   return (
     <div className="hidden md:block flex-grow-[1] relative">
-      <div className="flex items-center gap-[10px] absolute right-0">
+      <div className="flex items-center gap-[10px] absolut right-0">
         {!volume > 0 ? (
           <FaVolumeMute
             className="text-[white] text-xl"
